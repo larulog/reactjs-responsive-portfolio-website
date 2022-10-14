@@ -1,0 +1,119 @@
+.c {
+  height: 100%;
+  position: relative;
+}
+
+.c-bg {
+  width: 20px;
+  height: 100%;
+  background-color: rgb(212, 0, 255);
+  position: absolute;
+}
+
+.c-wrapper {
+  padding: 50px;
+  display: flex;
+}
+
+.c-left {
+  flex: 1;
+}
+
+.c-right {
+  flex: 1;
+}
+
+.c-title {
+  font-size: 60px;
+  width: 80%;
+}
+
+.c-info-item {
+  display: flex;
+  align-items: center;
+  margin: 50px 0px;
+  font-weight: 300;
+  width: 70%;
+}
+
+.c-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.c-desc {
+  font-size: 60px;
+  font-weight: 200;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(189, 189, 189);
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+textarea {
+  width: 100%;
+  margin: 10px 0px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  padding: 10px;
+  outline: none;
+  border: 2px solid rgb(189, 189, 189);
+}
+
+button {
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: transparent !important;
+  color: inherit !important;
+  border: 2px solid rgb(189, 189, 189);
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 480px) {
+  .c-wrapper {
+    flex-direction: column;
+    padding: 50px 50px;
+    padding-bottom: 200px;
+  }
+
+  .c-title {
+    font-size: 30px;
+  }
+
+  .c-info-item {
+    margin: 20px 0px;
+  }
+
+  .c-desc {
+    font-size: 30px;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 45%;
+    height: 40px;
+    margin: 14px;
+    margin-left: 0px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
